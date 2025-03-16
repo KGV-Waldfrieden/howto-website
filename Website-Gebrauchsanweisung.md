@@ -29,7 +29,7 @@ Auf die Website gibt es zwei strukturell unterschiedliche Sichtweisen.
 
 Die Website basiert auf einem veränderlichen Layout ("responsive design"), das sich an die Fenstergröße bzw. das verwendete Bildschirmgerät dynamisch anpasst.
 
- ![[pictures/website_landing_page.png]]
+ ![[/pictures/website_landing_page.png]]
 
 Auf der Startseite (der sog. '_Landing page_') werden die jüngsten drei Posting-Auszüge angezeigt (das jeweils vollständige Posting ist durch Klick auf '_WEITERLESEN_' erreichbar) und die übrigen Posting-Sites sind über die sogenannte '_Pagination_' (zu dt. "Seitenzählung") verlinkt.
 
