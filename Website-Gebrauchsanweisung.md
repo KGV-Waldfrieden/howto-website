@@ -74,14 +74,15 @@ Der hierarchische Aufbau und den entsprechenden Inhalten im Überblick:
 
 ### 2. Die Projektseite auf GitHub
 
-Es gibt einen GitHub-Account '**KGV Waldfrieden**' und auf der entsprechenden GitHub-Seite ([[https://github.com/KGV-Waldfrieden]]) diese zwei Repositories:
+Es gibt einen GitHub-Account '**KGV Waldfrieden**' und auf der entsprechenden GitHub-Seite ( https://github.com/KGV-Waldfrieden ) diese zwei Repositories:
 
 1. Das Repository '**website.github.io**' enthält die Verzeichnisse und Dateien für die Website. Die Bezeichnung des Repository ist auf die Namenskonventionen für '_GitHub Pages_' zurückzuführen.
+	- https://github.com/KGV-Waldfrieden/website.github.io
+	  
 	![repository-title](pictures/repository-Title.png)
-	-> [[https://github.com/KGV-Waldfrieden/website.github.io]]
 
 2. Ein weiteres Repository '**howto-website**' enthält die vorliegende Dokumentation.
-   -> [[https://github.com/KGV-Waldfrieden/howto-website]]
+	- https://github.com/KGV-Waldfrieden/howto-website
 
 #### Repository-Site
 
@@ -95,24 +96,29 @@ Die Inhalte KGV-Website basieren auf den Inhalten der Verzeichnisse und Dateien,
 
 ##### Pages-Verzeichnis
 ![pages-verzeichnis](pictures/verzeichnis_pages.png)
+
 Die Pages sind die Inhaltsseiten der Website und sind (bis auf eine Ausnahme) direkt von der Startseite (_Landing page_) über die Menü-Leiste oder den Impressum-Link im Footer erreichbar.
 
 ##### Posts- / Postings-Verzeichnis
 ![verzeichnis_posts](pictures/verzeichnis_posts.png)
+
 Postings sind einzelne News oder auch Informationen, bei denen Aktualität und kurzfristige Relevanz im Vordergrund steht. Aktuell haben wir die jeweils drei aktuellsten (die jüngsten bis einschließlich heute) auf der Startseite direkt als Auszug eingebunden und verlinkt.
 
 Es können auch bereits zukünftige Postings erstellt werden - diese werden aber erst mit Erreichen des entsprechenden Datums auf der Startseite angezeigt.
 
 ##### Bilder-Verzeichnis
 ![verzeichnis-images](pictures/verzeichnis_images.png)
+
 In diesem Ordner sind alle Bilder, Fotos oder auch Grafiken (i.d.R. mit den Dateiendungen 'jpg', 'gif' oder 'png') abgelegt, die irgendwo auf der Website eingebunden werden. Um diese *Images* einzubinden, müssen diese selbstverständlich via **commit** Teil des _Repositories_ werden.
 
 ##### Dokument-Verzeichnis
 ![verzeichnis-dokumente](pictures/verzeichnis_dokumente.png)
+
 Da auf der Website verschiedene Dokumente in verschiedenen Formaten (PDF, Word: doc/docx), aber auch als Bilddatei zur Verfügung stellen, gibt es dafür einen zentralen Ablageort. Auch für die Dokumente gilt: Um die einzubinden, d.h. auf der Website zu verlinken und auch anzuzeigen, müssen diese mittels **commit** Teil des _Repositories_ werden.
 
 ##### Die Datei 'index.html'
 ![datei-index.html](pictures/datei_index.html.png)
+
 Diese Datei ist per Konvention im WWW die Startseite einer Website - und so ist es auch hier. Im Gegensatz zu den ansonsten zu bearbeitenden Dateien liegt diese im HTML-Format ([Wikipedia-Link](https://de.wikipedia.org/wiki/Hypertext_Markup_Language)) vor. Wie auch das Markdown-Format ist es zwar Text-basiert, enthält aber erheblich mehr *Auszeichnungen*, die die Struktur und Gestaltung der Seite betreffen und das Lesen erschweren. Beim Blick in die Datei finden sich sämtliche Inhalte, die auf der Startseite der Website zu sehen sind, wieder.
 
 ##### Weitere Dateien und Verzeichnisse
@@ -133,7 +139,7 @@ Die Bearbeitung der Website folgt einem immer gleichen Schema.
 | Workflow. | Automatisierte Verarbeitung.                |
 | Publish.  | Veröffentlichung (als GitHub-Page).         |
 
-## Der Bearbeitungs-Prozess
+## Der Bearbeitungs-Phase
 
 Die initiale Sicht auf das Repository zeigt die '_Code_'-Ansicht mit dem bereits angesprochenen Verzeichnisbaum.
 
@@ -167,21 +173,32 @@ Alle Texte auf der Website sind mittels _Markdown_ formatiert. Das bietet den gr
 ### Bilder und Dokumente
 
 [...]
-# TODO:  Einbindung beschreiben!
 
+- - -
+TODO:  Einbindung von Bildern und Dokumenten beschreiben!
+- - -
 
+## Die 'commit'-Phase
 
-## Der 'commit'-Prozess
+Änderungen brauchen nur mittels '_commit_' in das GitHub-Repository übergeben zu werden (vom Verständnis her ähnlich wie das 'speichern' unter Windows). Führt man die Änderungen direkt innerhalb von GitHub durch, ist ansonsten keine weitere Aktion notwendig und es wird automatisch die nächste Phase gestartet: der automatisierte '_Workflow_'.
 
 [...]
-# TODO: Beschreibung COMMIT.
 
+- - -
+TODO: detailierter Beschreibung.
+- - -
 
-## Der Workflow-Prozess
+## Die Workflow-Phase
 
-Der Workflow zur Erzeugung der Website ist automatisiert, d.h. die Änderungen brauchen nur (in GitHub) mittels '_commit_' in das Repository übergeben zu werden (vom Verständnis her ähnlich wie das 'speichern' unter Windows). Im Hintergrund wird dann automatisch der sogenannte '_Build_'-Prozess gestartet, der aus den vorhandenen Text-basierten Inhalten im Verzeichnisbaum die Website neu erzeugt.
+Die Erzeugung der Website ist in GitHub über einen '_Workflow_' (basierend auf '_Actions_') automatisiert und wird automatisch gestartet, wenn ein '_commit_' in das Website-Repository registriert wird.
 
-In der Regel läuft ein solcher Prozess ohne Probleme durch und die Website wird auch gleich veröffentlicht. Das Ergebnis kann dann unter der bekannten Adresse der Homepage im Internet ([[https://www.kgv-waldfrieden-hannover.de]]) angeschaut werden.
+Dazu werden die Inhalte im Repository und die vorhandenen Konfigurationen durch das Jekyll-Framework verarbeitet und im Hintergrund ein sogenannte '_Build_'-Prozess ausgeführt, der daraus die statischen Daten für die Website neu erzeugt. In der Regel läuft ein solcher Prozess ohne Probleme durch.
+
+## Die Publish-Phase
+
+Innerhalb dieser Phase werden die neu erzeugten Inhalte auf einem Webserver bereitgestellt und damit im Internet veröffentlicht.
+
+Ein erfolgreicher '_Build_'-Prozess stellt die neu generierten Dateien so zur Verfügung, dass diese direkt auf einer '_GitHub Page_' veröffentlicht werden können. Das Ergebnis kann dann dort unter der URL https://kgv-waldfrieden.github.io/website.github.io/ und natürlich unter der bekannten Adresse der KGV-Homepage im Internet ([[https://www.kgv-waldfrieden-hannover.de]]) angeschaut werden.
 
 Kommt es während des '_Build_'-Prozesses zu Fehlern, findet keine Veröffentlichung statt. Damit ist gewährleistet, dass es durch kleinere Fehler nicht zu einer "kaputten Website" kommen kann. Hinweise bzgl. der Kontrolle und Fehler-Recherche werden im Anhang weiter beschrieben.
 
