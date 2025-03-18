@@ -75,7 +75,7 @@ Im _Footer_-Bereich der Website finden sich außerdem noch die Links mit der Mai
 
 ### 2. Die Projektseite auf GitHub
 
-Es gibt einen GitHub-Account '**KGV Waldfrieden**' und auf der entsprechenden GitHub-Seite ( https://github.com/KGV-Waldfrieden ) diese zwei Repositories:
+Es gibt einen GitHub-Account '**KGV Waldfrieden**' und auf der entsprechenden GitHub-Seite ( https://github.com/KGV-Waldfrieden ) diese zwei Repositories:x^
 
 1. Das Repository '**website.github.io**' enthält die Verzeichnisse und Dateien für die Website. Die Bezeichnung des Repository ist auf die Namenskonventionen für '_GitHub Pages_' zurückzuführen.
 	- https://github.com/KGV-Waldfrieden/website.github.io
@@ -87,7 +87,13 @@ Es gibt einen GitHub-Account '**KGV Waldfrieden**' und auf der entsprechenden Gi
 
 #### Repository-Site
 
-Für die Bearbeitung ist primär nur die Seite mit der '_Code_'-View relevant.
+Beim Aufruf von https://github.com/KGV-Waldfrieden/website.github.io wird direkt die '_Code_'-View angezeigt.
+
+![repository-Menu](pictures/repository-Menu.png)
+
+Diese View ist in der Menü-Zeile durch einen orangene Unterstreichung markiert.
+
+Auch wenn auf den ersten Blick noch kein "Code" zu sehen ist, ist diese View der Ausgangspunkt für die Bearbeitung der Inhalte (siehe folgende Abschnitte).
 
 ![repository-View_Code_1](pictures/repository-View_Code_1.png)
 ![repository-View_Code_2](pictures/repository-View_Code_2.png)
@@ -146,9 +152,15 @@ Die Bearbeitung der Website folgt einem immer gleichen Schema.
 | Workflow. | Automatisierte Verarbeitung.                |
 | Publish.  | Veröffentlichung (als GitHub-Page).         |
 
+## Berechtigung zur Bearbeitung
+
+Vorweg zur Klarstellung: das Repository der Website ist _public_ (also öffentlich sichtbar). Das bedeutet, jeder, der diese Website aufruft, kann die Inhalte dieses Repositories einsehen, auch ohne dort (also bei GitHub) angemeldet zu sein. Das ist kein Problem, da es sich dort nicht um irgendwie schützenswerte Daten handelt.
+
+Erst die tatsächliche Bearbeitung erfordert den _Login_ (also die Anmeldung als berechtigter Benutzer). Dadurch ist gewährleistet, dass jede Änderung an den Quelldateien einem Benutzerkonto zugeordnet werden kann. Und nur für dieses Repository **berechtigte** Benutzerkonten können hier auch Änderungen durchführen.
+
 ## Die Bearbeitungs-Phase
 
-Die initiale Sicht auf das Repository zeigt die '_Code_'-Ansicht mit dem bereits angesprochenen Verzeichnisbaum.
+Die initiale Sicht auf das Repository zeigt die '_Code_'-Ansicht mit dem bereits angesprochenen Verzeichnisbaum. 
 
 Ein Klick auf ein Verzeichnis innerhalb des Verzeichnisbaums öffnet das Verzeichnis (ähnlich wie z.B. ein Datei-Manager in Windows) und zeigt die folgende Ansicht:
 
